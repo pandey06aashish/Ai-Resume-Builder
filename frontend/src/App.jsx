@@ -1,11 +1,12 @@
-import { Button } from "./components/ui/button";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-export default function App() {
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-      <Button> Subscribe</Button>
-
-    </h1>
+    <>
+      <Outlet/>
+    </>
   )
 }
+
+export default App
